@@ -48,7 +48,8 @@
             </LinearLayout>
         </LinearLayout>
 
-        <Button style="@style/resetScore"/>
+        <Button style="@style/resetScore"
+            android:layout_below="@id/main_linear_layout"/>
 
     </RelativeLayout>
 
