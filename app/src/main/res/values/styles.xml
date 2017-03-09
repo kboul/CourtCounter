@@ -40,9 +40,9 @@
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:gravity">center</item>
-        <item name="android:padding">16dp</item>
+        <item name="android:padding">@dimen/titlePadding</item>
         <item name="android:text">@string/teamATitle</item>
-        <item name="android:textSize">14sp</item>
+        <item name="android:textSize">@dimen/titleTextSize</item>
         <item name="android:textColor">@color/teamName</item>
         <item name="android:fontFamily">sans-serif-medium</item>
     </style>
@@ -51,9 +51,9 @@
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:gravity">center</item>
-        <item name="android:padding">16dp</item>
+        <item name="android:padding">@dimen/titlePadding</item>
         <item name="android:text">@string/teamBTitle</item>
-        <item name="android:textSize">14sp</item>
+        <item name="android:textSize">@dimen/titleTextSize</item>
         <item name="android:textColor">@color/teamName</item>
         <item name="android:fontFamily">sans-serif-medium</item>
     </style>
@@ -62,9 +62,9 @@
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:gravity">center</item>
-        <item name="android:paddingBottom">24dp</item>
+        <item name="android:paddingBottom">@dimen/scorePaddingBottom</item>
         <item name="android:text">@string/teamAScore</item>
-        <item name="android:textSize">56sp</item>
+        <item name="android:textSize">@dimen/scoreTextSize</item>
         <item name="android:textColor">@color/teamScore</item>
         <item name="android:fontFamily">sans-serif-light</item>
     </style>
@@ -73,9 +73,9 @@
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:gravity">center</item>
-        <item name="android:paddingBottom">24dp</item>
+        <item name="android:paddingBottom">@dimen/scorePaddingBottom</item>
         <item name="android:text">@string/teamBScore</item>
-        <item name="android:textSize">56sp</item>
+        <item name="android:textSize">@dimen/scoreTextSize</item>
         <item name="android:textColor">@color/teamScore</item>
         <item name="android:fontFamily">sans-serif-light</item>
     </style>
@@ -83,9 +83,9 @@
     <style name="threePoints2TeamA">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_marginLeft">24dp</item>
-        <item name="android:layout_marginRight">24dp</item>
-        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:layout_marginLeft">@dimen/pointsMarginLeftRight</item>
+        <item name="android:layout_marginRight">@dimen/pointsMarginLeftRight</item>
+        <item name="android:layout_marginBottom">@dimen/pointsMarginBottom</item>
         <item name="android:onClick">score</item>
         <item name="android:text">@string/threePoints</item>
         <item name="android:tag">3_A</item>
@@ -94,20 +94,20 @@
     <style name="threePoints2TeamB">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_marginLeft">24dp</item>
-        <item name="android:layout_marginRight">24dp</item>
-        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:layout_marginLeft">@dimen/pointsMarginLeftRight</item>
+        <item name="android:layout_marginRight">@dimen/pointsMarginLeftRight</item>
+        <item name="android:layout_marginBottom">@dimen/pointsMarginBottom</item>
         <item name="android:onClick">score</item>
         <item name="android:text">@string/threePoints</item>
-        <item name="android:tag">3</item>
+        <item name="android:tag">3_B</item>
     </style>
 
     <style name="twoPoints2TeamA">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_marginLeft">24dp</item>
-        <item name="android:layout_marginRight">24dp</item>
-        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:layout_marginLeft">@dimen/pointsMarginLeftRight</item>
+        <item name="android:layout_marginRight">@dimen/pointsMarginLeftRight</item>
+        <item name="android:layout_marginBottom">@dimen/pointsMarginBottom</item>
         <item name="android:onClick">score</item>
         <item name="android:text">@string/twoPoints</item>
         <item name="android:tag">2_A</item>
@@ -116,20 +116,20 @@
     <style name="twoPoints2TeamB">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_marginLeft">24dp</item>
-        <item name="android:layout_marginRight">24dp</item>
-        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:layout_marginLeft">@dimen/pointsMarginLeftRight</item>
+        <item name="android:layout_marginRight">@dimen/pointsMarginLeftRight</item>
+        <item name="android:layout_marginBottom">@dimen/pointsMarginBottom</item>
         <item name="android:onClick">score</item>
         <item name="android:text">@string/twoPoints</item>
-        <item name="android:tag">2</item>
+        <item name="android:tag">2_B</item>
     </style>
 
     <style name="freeThrow2TeamA">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_marginLeft">24dp</item>
-        <item name="android:layout_marginRight">24dp</item>
-        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:layout_marginLeft">@dimen/pointsMarginLeftRight</item>
+        <item name="android:layout_marginRight">@dimen/pointsMarginLeftRight</item>
+        <item name="android:layout_marginBottom">@dimen/pointsMarginBottom</item>
         <item name="android:onClick">score</item>
         <item name="android:text">@string/freeThrow</item>
         <item name="android:tag">1_A</item>
@@ -138,18 +138,18 @@
     <style name="freeThrow2TeamB">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_marginLeft">24dp</item>
-        <item name="android:layout_marginRight">24dp</item>
-        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:layout_marginLeft">@dimen/pointsMarginLeftRight</item>
+        <item name="android:layout_marginRight">@dimen/pointsMarginLeftRight</item>
+        <item name="android:layout_marginBottom">@dimen/pointsMarginBottom</item>
         <item name="android:onClick">score</item>
         <item name="android:text">@string/freeThrow</item>
-        <item name="android:tag">1</item>
+        <item name="android:tag">1_B</item>
     </style>
 
     <style name="resetScore">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_marginBottom">32dp</item>
+        <item name="android:layout_marginBottom">@dimen/resetMarginBottom</item>
         <item name="android:layout_centerHorizontal">true</item>
         <item name="android:layout_alignParentBottom">true</item>
         <item name="android:onClick">resetScore</item>
@@ -159,7 +159,7 @@
     <style name="line">
         <item name="android:layout_width">1dp</item>
         <item name="android:layout_height">match_parent</item>
-        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:layout_marginTop">@dimen/lineMarginTop</item>
         <item name="android:background">@color/line</item>
     </style>
 </resources>

@@ -66,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
             scoreTeamA = scoreTeamA + Integer.valueOf(points);
             displayForTeamA(scoreTeamA);
         }
-        else {
+        else if (points.indexOf("B") > -1){
             points = points.substring(0,1);
             scoreTeamB = scoreTeamB + Integer.valueOf(points);
             displayForTeamB(scoreTeamB);
