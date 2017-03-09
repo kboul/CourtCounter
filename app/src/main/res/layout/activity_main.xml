@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context="com.example.android.courtcounter.MainActivity">
+
+    <RelativeLayout style="@style/main_relative_layout">
+
+        <LinearLayout
+            android:id="@+id/main_linear_layout"
+            style="@style/main_linear_layout">
+
+            <LinearLayout style="@style/teamALayout">
+
+                <TextView style="@style/teamATitle" />
+
+                <TextView
+                    android:id="@+id/team_a_score"
+                    style="@style/teamAScore" />
+
+                <Button style="@style/threePoints2TeamA" />
+
+                <Button style="@style/twoPoints2TeamA" />
+
+                <Button style="@style/freeThrow2TeamA" />
+
+            </LinearLayout>
+
+            <View style="@style/line"></View>
+
+            <LinearLayout style="@style/teamBLayout">
+
+                <TextView style="@style/teamBTitle" />
+
+                <TextView
+                    android:id="@+id/team_b_score"
+                    style="@style/teamBScore" />
+
+                <Button style="@style/threePoints2TeamB" />
+
+                <Button style="@style/twoPoints2TeamB" />
+
+                <Button style="@style/freeThrow2TeamB" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button style="@style/resetScore" />
+
+    </RelativeLayout>
+
+</ScrollView>

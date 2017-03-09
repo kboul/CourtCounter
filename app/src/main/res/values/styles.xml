@@ -1,0 +1,159 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <!--<style name="AppTheme" parent="Theme.AppCompat.Light">-->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar"> <!-- Remove AppTitle -->
+        <!-- Primary theme color of the app (sets background color of app bar) -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <!-- Background color of buttons in the app -->
+        <item name="colorButtonNormal">@color/colorButtonNormal</item>
+    </style>
+
+    <style name="main_relative_layout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="main_linear_layout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="teamALayout">
+        <!-- Setting the width of both children Layouts to 0 and the weight to 1 gives the expected equal comparison -->
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="teamBLayout">
+        <!-- Setting the width of both children Layouts to 0 and the weight to 1 gives the expected equal comparison -->
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="teamATitle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">16dp</item>
+        <item name="android:text">@string/teamATitle</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/teamName</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <style name="teamBTitle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">16dp</item>
+        <item name="android:text">@string/teamBTitle</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/teamName</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <style name="teamAScore">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingBottom">24dp</item>
+        <item name="android:text">@string/teamAScore</item>
+        <item name="android:textSize">56sp</item>
+        <item name="android:textColor">@color/teamScore</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+
+    <style name="teamBScore">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingBottom">24dp</item>
+        <item name="android:text">@string/teamBScore</item>
+        <item name="android:textSize">56sp</item>
+        <item name="android:textColor">@color/teamScore</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+
+    <style name="threePoints2TeamA">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">24dp</item>
+        <item name="android:layout_marginRight">24dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:onClick">threePoints2TeamA</item>
+        <item name="android:text">@string/threePoints</item>
+    </style>
+
+    <style name="threePoints2TeamB">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">24dp</item>
+        <item name="android:layout_marginRight">24dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:onClick">threePoints2TeamB</item>
+        <item name="android:text">@string/threePoints</item>
+    </style>
+
+    <style name="twoPoints2TeamA">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">24dp</item>
+        <item name="android:layout_marginRight">24dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:onClick">twoPoints2TeamA</item>
+        <item name="android:text">@string/twoPoints</item>
+    </style>
+
+    <style name="twoPoints2TeamB">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">24dp</item>
+        <item name="android:layout_marginRight">24dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:onClick">twoPoints2TeamB</item>
+        <item name="android:text">@string/twoPoints</item>
+    </style>
+
+    <style name="freeThrow2TeamA">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">24dp</item>
+        <item name="android:layout_marginRight">24dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:onClick">freeThrow2TeamA</item>
+        <item name="android:text">@string/freeThrow</item>
+    </style>
+
+    <style name="freeThrow2TeamB">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">24dp</item>
+        <item name="android:layout_marginRight">24dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:onClick">freeThrow2TeamB</item>
+        <item name="android:text">@string/freeThrow</item>
+    </style>
+
+    <style name="resetScore">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">32dp</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:onClick">resetScore</item>
+        <item name="android:text">@string/resetScore</item>
+    </style>
+
+    <style name="line">
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:background">@color/line</item>
+    </style>
+</resources>

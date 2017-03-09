@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FF9800</color>
+    <color name="colorButtonNormal">#FF9800</color>
+    <color name="teamName">#616161</color>
+    <color name="teamScore">#000000</color>
+    <color name="line">@android:color/darker_gray</color>
+</resources>
