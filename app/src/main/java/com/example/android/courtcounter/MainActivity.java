@@ -2,6 +2,7 @@ package com.example.android.courtcounter;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
@@ -17,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * Saves the score instance state
+     * Saves the score instance state for both teams
      */
     @Override
     public void onSaveInstanceState(Bundle savedInstanceState) {
@@ -27,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * Restores the score instance state in case of screen mode change
+     * Restores the score instance state for both teams in case of screen mode change
      */
     @Override
     public void onRestoreInstanceState(Bundle savedInstanceState) {
@@ -48,30 +49,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * Add 3 points to Team A
-     */
-    public void threePoints2TeamA(View view) {
-        scoreTeamA = scoreTeamA + 3;
-        displayForTeamA(scoreTeamA);
-    }
-
-    /**
-     * Add 2 points to Team A
-     */
-    public void twoPoints2TeamA(View view) {
-        scoreTeamA = scoreTeamA + 2;
-        displayForTeamA(scoreTeamA);
-    }
-
-    /**
-     * Add 1 point to Team A
-     */
-    public void freeThrow2TeamA(View view) {
-        scoreTeamA = scoreTeamA + 1;
-        displayForTeamA(scoreTeamA);
-    }
-
-    /**
      * Displays the given score for Team B.
      */
     public void displayForTeamB(int score) {
@@ -80,27 +57,20 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * Add 3 points to Team B
+     * Displays the given score for both teams.
      */
-    public void threePoints2TeamB(View view) {
-        scoreTeamB = scoreTeamB + 3;
-        displayForTeamB(scoreTeamB);
-    }
-
-    /**
-     * Add 2 points to Team B
-     */
-    public void twoPoints2TeamB(View view) {
-        scoreTeamB = scoreTeamB + 2;
-        displayForTeamB(scoreTeamB);
-    }
-
-    /**
-     * Add 1 point to Team B
-     */
-    public void freeThrow2TeamB(View view) {
-        scoreTeamB = scoreTeamB + 1;
-        displayForTeamB(scoreTeamB);
+    public void score(View view) {
+        String points = view.getTag().toString();
+        if (points.indexOf("A") > -1) {
+            points = points.substring(0,1);
+            scoreTeamA = scoreTeamA + Integer.valueOf(points);
+            displayForTeamA(scoreTeamA);
+        }
+        else {
+            points = points.substring(0,1);
+            scoreTeamB = scoreTeamB + Integer.valueOf(points);
+            displayForTeamB(scoreTeamB);
+        }
     }
 
     /**
